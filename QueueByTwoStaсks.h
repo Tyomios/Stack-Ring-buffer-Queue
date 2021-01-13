@@ -4,45 +4,44 @@
 
 #include "Stack.h"
 
-/// @brief Очередь на двух стэках
+/// @brief РћС‡РµСЂРµРґСЊ РЅР° РґРІСѓС… СЃС‚СЌРєР°С…
 struct QueueByTwoStacks 
 {
-	Stack* FirstStack = new Stack;	//< Стэк для добавления
-	Stack* SecondStack = new Stack;	//< Стэк для извлечения
+	Stack* FirstStack  = new Stack;	//< РЎС‚СЌРє РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ
+	Stack* SecondStack = new Stack;	//< РЎС‚СЌРє РґР»СЏ РёР·РІР»РµС‡РµРЅРёСЏ
 };
 
 
-/// @brief Функция инициализации очереди
+/// @brief Р¤СѓРЅРєС†РёСЏ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РѕС‡РµСЂРµРґРё
 ///  
-/// @param TwoStacksQueue инициализируемая очередь
+/// @param TwoStacksQueue РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРјР°СЏ РѕС‡РµСЂРµРґСЊ
 void QueueInit(QueueByTwoStacks* TwoStacksQueue);
 
-/// @brief Добавить элемент в очередь
+/// @brief Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚ РІ РѕС‡РµСЂРµРґСЊ
 /// 
-/// @param data				Значение вставляемого элемента
-/// @param TwoStacksQueue	Очередь, в которую добавляем данные
+/// @param data			Р—РЅР°С‡РµРЅРёРµ РІСЃС‚Р°РІР»СЏРµРјРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
+/// @param TwoStacksQueue	РћС‡РµСЂРµРґСЊ, РІ РєРѕС‚РѕСЂСѓСЋ РґРѕР±Р°РІР»СЏРµРј РґР°РЅРЅС‹Рµ
 void PushQueue(int data, QueueByTwoStacks* TwoStacksQueue);
 
-/// @brief Вытащить элемент из очереди
+/// @brief Р’С‹С‚Р°С‰РёС‚СЊ СЌР»РµРјРµРЅС‚ РёР· РѕС‡РµСЂРµРґРё
 /// 
-/// @param TwoStacksQueue очередь, из которой извлекают элемент
+/// @param TwoStacksQueue РѕС‡РµСЂРµРґСЊ, РёР· РєРѕС‚РѕСЂРѕР№ РёР·РІР»РµРєР°СЋС‚ СЌР»РµРјРµРЅС‚
 /// 
-/// @return Значение первого добавленного элемента
+/// @return Р—РЅР°С‡РµРЅРёРµ РїРµСЂРІРѕРіРѕ РґРѕР±Р°РІР»РµРЅРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
 int PopQueue(QueueByTwoStacks* TwoStacksQueue);
 
-/// @brief Возвращает индекс элемента, который будет удален 
-///			при использовании PopQueue()
+/// @brief Р’РѕР·РІСЂР°С‰Р°РµС‚ РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ СѓРґР°Р»РµРЅ 
+///			РїСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё PopQueue()
 /// 
-/// @param TwoStacksQueue используемая очередь
+/// @param TwoStacksQueue РёСЃРїРѕР»СЊР·СѓРµРјР°СЏ РѕС‡РµСЂРµРґСЊ
 /// 
-/// @return Индекс элемента
+/// @return РРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р°
 int GetTopQueue(QueueByTwoStacks* TwoStacksQueue);
 
-/// @brief Получить размер заполненной очереди
+/// @brief РџРѕР»СѓС‡РёС‚СЊ СЂР°Р·РјРµСЂ Р·Р°РїРѕР»РЅРµРЅРЅРѕР№ РѕС‡РµСЂРµРґРё
 /// 
-/// @param TwoStacksQueue используемая очередь
+/// @param TwoStacksQueue РёСЃРїРѕР»СЊР·СѓРµРјР°СЏ РѕС‡РµСЂРµРґСЊ
 /// 
-/// @return Длина очереди
+/// @return Р”Р»РёРЅР° РѕС‡РµСЂРµРґРё
 int GetLengthQueue(QueueByTwoStacks* TwoStacksQueue);
 #endif 
-
