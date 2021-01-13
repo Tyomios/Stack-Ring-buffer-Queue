@@ -11,6 +11,7 @@ struct QueueByTwoStacks
 	Stack* SecondStack = new Stack;	//< Стэк для извлечения
 };
 
+
 /// @brief Функция инициализации очереди
 ///  
 /// @param TwoStacksQueue инициализируемая очередь
